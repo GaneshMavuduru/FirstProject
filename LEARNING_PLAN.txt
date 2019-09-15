@@ -1,0 +1,50 @@
+Date: 15/09/2018
+
+
+My Learning Plan:
+
+1. GitHub/Git - How to create reports, link them with Jenkins: Accounts, Add some working code.
+2. Jenkins configuration with github. 
+3. Azure.
+4. Ansible/Puppet
+
+
+----------------------------
+git init
+git add <file> - make the changes to staging area
+git status - differences between working tree and staging area
+git commit - put into local repository.
+
+Remote repository commands:
+git push - take local repo to remote repo
+git pull 
+git clone - clone a remote repo to local.
+git remote add origin <url_remote_repo_url>
+     TO add a local repo to remote. 
+git push -u origin master
+     Push the local changes to repository <very first time>
+Configuration:
+git config --global user.name 'GaneshMavuduru'
+git config --global user.email 'ganesh.mavuduru@gmail.com'
+
+Add local repo to github:
+git remote add <RepoName> <url>
+example:
+git remote add FirstProject https://github.com/GaneshMavuduru/FirstProject.git
+git push --set-upstream FirstProject master
+git checkout -b <new_branch_name>
+    make changes in the files and commit and push the new branch using below command
+git push origin HEAD
+ Inorder to pull changes from remote repo for newly created branches.
+git branch --set-upstream-to=origin/branch3 branch3
+git rm --cached <file_name> - To remove a added file from staging area.
+
+
+.gitignore:
+Create this file in the repo and mention all files that are not required to be pushed/added to remote
+
+git merge <branch_name> - To get changes from another branch to current branch
+
+
+
+
